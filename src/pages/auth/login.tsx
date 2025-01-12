@@ -35,7 +35,7 @@ const Login: FC = (): JSX.Element => {
 
 	const loginWithGoogle = () => {
 		try {
-			window.open(`${API_URL}/api/auth/google/callback`, '_self')
+			window.open(`${API_URL}api/auth/google/callback`, '_self')
 		} catch (error) {
 			if (error instanceof Error) toast.error(error.message)
 		}
